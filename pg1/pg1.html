@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portal Escolar - Início</title>
+    <link rel="stylesheet" href="pg.css">
+</head>
+
+<body>
+    <div class="layout-escola">
+        <input type="radio" name="abas" id="tab-aulas" class="radio-aba" checked><input type="radio" name="abas"
+            id="tab-notas" class="radio-aba"><input type="radio" name="abas" id="tab-turmas" class="radio-aba"><input
+            type="radio" name="abas" id="tab-reunioes" class="radio-aba"><input type="radio" name="abas"
+            id="tab-calendario" class="radio-aba"><input type="radio" name="abas" id="tab-usuarios" class="radio-aba">
+        <aside class="menu-lateral">
+            <div class="logo-escola">
+                <h2>Portal Escolar</h2><small>Área do estudante</small>
+            </div>
+            <nav class="navegacao"><label for="tab-aulas" class="aba-btn label-aulas">▣ &nbsp; Aulas</label><label
+                    for="tab-notas" class="aba-btn label-notas">▤ &nbsp; Notas</label><label for="tab-turmas"
+                    class="aba-btn label-turmas">▦ &nbsp; Turmas</label><label for="tab-reunioes"
+                    class="aba-btn label-reunioes">▧ &nbsp; Reuniões</label><label for="tab-calendario"
+                    class="aba-btn label-calendario">▣ &nbsp; Calendário Escolar</label><label for="tab-usuarios"
+                    class="aba-btn label-usuarios">♙ &nbsp; Usuários</label></nav>
+            <div class="rodape-menu"><a href="../projeto.html" class="btn-sair">↪ &nbsp; Sair do Sistema</a></div>
+        </aside>
+        <main class="conteudo-principal">
+            <header class="cabecalho-topo">
+                <div>
+                    <p class="eyebrow">PORTAL DO ESTUDANTE</p>
+                    <h1>Bem-vindo ao Painel do Aluno</h1>
+                </div><span class="usuario-info">Ano Letivo: 2026</span>
+            </header>
+            <section class="conteudo-aba sec-aulas">
+                <h2>Minhas Aulas</h2>
+                <div class="grade-cards">
+                    <div class="card">
+                        <h3>Matemática</h3>
+                        <p>Segunda e Quarta - 08:00 às 09:40</p><span class="status">Sala 102</span>
+                    </div>
+                    <div class="card">
+                        <h3>História</h3>
+                        <p>Terça e Quinta - 10:00 às 11:40</p><span class="status">Sala 205</span>
+                    </div>
+                </div>
+            </section>
+            <section class="conteudo-aba sec-notas">
+                <h2>Boletim de Notas</h2>
+                <div class="table-wrap">
+                    <table class="tabela-notas">
+                        <thead>
+                            <tr>
+                                <th>Disciplina</th>
+                                <th>1º Bimestre</th>
+                                <th>2º Bimestre</th>
+                                <th>Situação</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Matemática</td>
+                                <td>8,5</td>
+                                <td>9,0</td>
+                                <td>Aprovado</td>
+                            </tr>
+                            <tr>
+                                <td>História</td>
+                                <td>7,5</td>
+                                <td>8,0</td>
+                                <td>Aprovado</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+            <section class="conteudo-aba sec-turmas">
+                <h2>Minhas Turmas</h2>
+                <div class="card">
+                    <h3>3º Ano B - Ensino Médio</h3>
+                    <p>Turno: Matutino | Coordenador: Prof. Carlos Silva</p>
+                </div>
+            </section>
+            <section class="conteudo-aba sec-reunioes">
+                <h2>Reuniões Agendadas</h2>
+                <div class="card">
+                    <h3>Reunião de Pais e Mestres</h3>
+                    <p>Data: 25/11/2026 às 19:00 | Local: Auditório Principal</p>
+                </div>
+            </section>
+            <section class="conteudo-aba sec-calendario">
+                <h2>Calendário Escolar</h2>
+                <div class="card">
+                    <h3>Próximos Eventos</h3>
+                    <p><strong>20/11:</strong> Feriado Nacional</p>
+                    <p><strong>05/12:</strong> Início das Provas Finais</p>
+                </div>
+            </section>
+            <section class="conteudo-aba sec-usuarios">
+                <div class="user-heading">
+                    <div>
+                        <p class="eyebrow">CONTA E SERVIÇOS</p>
+                        <h2>Área do usuário</h2>
+                        <p class="muted">Consulte e atualize seus dados acadêmicos e pessoais.</p>
+                    </div><span class="demo-tag">Dados demonstrativos</span>
+                </div>
+                <nav class="user-tabs" aria-label="Seções do usuário"><button class="user-tab active"
+                        data-panel="identificacao">Identificação</button><button class="user-tab"
+                        data-panel="academica">Vida acadêmica</button><button class="user-tab"
+                        data-panel="financeiro">Financeiro</button><button class="user-tab"
+                        data-panel="servicos">Serviços e biblioteca</button><button class="user-tab"
+                        data-panel="seguranca">Segurança</button></nav>
+                <div class="user-panel active" id="panel-identificacao">
+                    <div class="profile-top card">
+                        <div class="avatar-wrap"><img id="profile-photo" alt="Foto de perfil"
+                                src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='120' viewBox='0 0 120 120'%3E%3Crect width='120' height='120' rx='60' fill='%23e8efff'/%3E%3Ccircle cx='60' cy='43' r='22' fill='%2386a8e7'/%3E%3Cpath d='M20 112c4-25 19-38 40-38s36 13 40 38' fill='%2386a8e7'/%3E%3C/svg%3E">
+                        </div>
+                        <div class="profile-info">
+                            <h3 id="profile-name-display">Usuário</h3>
+                            <p class="muted">Estudante · Matrícula <span id="profile-ra-short">202600123</span></p>
+                            <div class="photo-actions"><label class="btn-primary" for="photo-upload">Enviar
+                                    foto</label><input id="photo-upload" type="file" accept="image/*" hidden><button
+                                    type="button" class="btn-light" id="remove-photo">Excluir foto</button></div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="section-title">
+                            <div>
+                                <h3>Dados pessoais</h3>
+                                <p class="muted">Os campos abaixo podem ser editados.</p>
+                            </div><button type="button" class="btn-primary" id="edit-profile">Editar dados</button>
+                        </div>
+                        <form id="profile-form" class="data-grid">
+                            <div class="field"><label for="full-name">Nome completo</label><input id="full-name"
+                                    value="********" readonly required></div>
+                            <div class="field"><label for="social-name">Nome social</label><input id="social-name"
+                                    placeholder="Não informado" readonly></div>
+                            <div class="field"><label for="pronouns">Pronome de preferência</label><select id="pronouns"
+                                    disabled>
+                                    <option>Não informado</option>
+                                    <option>Ele/dele</option>
+                                    <option>Ela/dela</option>
+                                    <option>Elu/delu</option>
+                                </select></div>
+                            <div class="field"><label for="ra">Matrícula / RA</label>
+                                <div class="inline-input"><input id="ra" value="202600123" readonly><button
+                                        type="button" class="btn-light copy-btn" id="copy-ra">Copiar</button></div>
+                            </div>
+                            <div class="field"><label for="institutional-email">E-mail institucional</label><input
+                                    id="institutional-email" type="email" value="*********@aluno.escola.edu.br"
+                                    readonly></div>
+                            <div class="field"><label for="personal-email">E-mail pessoal</label><input
+                                    id="personal-email" type="email" value="*********@email.com" readonly></div>
+                            <div class="field"><label for="phone">Telefone</label><input id="phone"
+                                    value="(61) 99999-0000" readonly></div>
+                            <div class="field"><label for="address">Endereço residencial</label><input id="address"
+                                    value="Brasília - DF" readonly></div>
+                            <div class="form-actions" id="profile-actions" hidden><button class="btn-primary"
+                                    type="submit">Salvar alterações</button><button class="btn-light" type="button"
+                                    id="cancel-edit">Cancelar</button></div>
+                        </form>
+                    </div>
+                    <div class="card student-card">
+                        <div>
+                            <p class="eyebrow">CARTEIRINHA ESTUDANTIL DIGITAL</p>
+                            <h3>Portal Escolar</h3>
+                            <p>Usuário</p>
+                            <p>RA: 202600123</p><small>Válida para o ano letivo de 2026</small>
+                        </div>
+                        <div class="fake-qr" aria-label="Código visual demonstrativo">
+                            <span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="user-panel" id="panel-academica">
+                    <div class="stats-grid">
+                        <div class="stat-card"><span>Status da matrícula</span><strong class="good">Ativa</strong></div>
+                        <div class="stat-card"><span>Curso</span><strong>Ensino Médio</strong></div>
+                        <div class="stat-card"><span>Turno / Campus</span><strong>Matutino · Central</strong></div>
+                        <div class="stat-card"><span>Semestre atual</span><strong>2º semestre</strong></div>
+                    </div>
+                    <div class="card">
+                        <div class="section-title">
+                            <h3>Conclusão do curso</h3><strong>68%</strong>
+                        </div>
+                        <div class="progress"><span style="width:68%"></span></div>
+                        <p class="muted">Coeficiente de rendimento (CR): <strong>8,4 / 10</strong></p>
+                    </div>
+                    <div class="card">
+                        <h3>Emissão de documentos</h3>
+                        <p class="muted">Selecione o documento para gerar uma versão demonstrativa.</p>
+                        <div class="action-list"><button class="btn-light document-btn"
+                                data-doc="Atestado de Matrícula">Atestado de matrícula ↗</button><button
+                                class="btn-light document-btn" data-doc="Histórico Escolar">Histórico escolar
+                                ↗</button><button class="btn-light document-btn"
+                                data-doc="Conteúdo Programático">Conteúdo programático ↗</button></div>
+                    </div>
+                    <div class="card">
+                        <h3>Grade horária e frequência</h3>
+                        <div class="table-wrap">
+                            <table class="data-table">
+                                <thead>
+                                    <tr>
+                                        <th>Disciplina</th>
+                                        <th>Horário / Sala</th>
+                                        <th>Faltas</th>
+                                        <th>Limite</th>
+                                        <th>Alerta</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Matemática</td>
+                                        <td>Seg/Qua · 08h · 102</td>
+                                        <td>3</td>
+                                        <td>15</td>
+                                        <td><span class="pill good-bg">Regular</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>História</td>
+                                        <td>Ter/Qui · 10h · 205</td>
+                                        <td>12</td>
+                                        <td>15</td>
+                                        <td><span class="pill warn-bg">Atenção</span></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                <div class="user-panel" id="panel-financeiro">
+                    <div class="stats-grid">
+                        <div class="stat-card"><span>Situação financeira</span><strong class="good">Em dia</strong>
+                        </div>
+                        <div class="stat-card"><span>Próximo vencimento</span><strong>10/12/2026</strong></div>
+                        <div class="stat-card"><span>Benefício ativo</span><strong>Bolsa institucional</strong></div>
+                    </div>
+                    <div class="card">
+                        <h3>Boletos e pagamentos</h3>
+                        <div class="table-wrap">
+                            <table class="data-table">
+                                <thead>
+                                    <tr>
+                                        <th>Referência</th>
+                                        <th>Vencimento</th>
+                                        <th>Valor</th>
+                                        <th>Situação</th>
+                                        <th>Ação</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Mensalidade - Dez/2026</td>
+                                        <td>10/12/2026</td>
+                                        <td>R$ 450,00</td>
+                                        <td><span class="pill warn-bg">Em aberto</span></td>
+                                        <td><button class="text-button demo-action">2ª via</button></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Mensalidade - Nov/2026</td>
+                                        <td>10/11/2026</td>
+                                        <td>R$ 450,00</td>
+                                        <td><span class="pill good-bg">Pago</span></td>
+                                        <td><button class="text-button demo-action">Comprovante</button></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="action-list"><button class="btn-light demo-action">Histórico de
+                                pagamentos</button><button class="btn-light demo-action">Informe de rendimentos
+                                (IR)</button></div>
+                    </div>
+                    <div class="card">
+                        <h3>Bolsas, descontos e auxílios</h3>
+                        <div class="benefit-row">
+                            <div><strong>Bolsa institucional</strong>
+                                <p class="muted">Desconto demonstrativo de 30%</p>
+                            </div><span class="pill good-bg">Ativa</span>
+                        </div>
+                        <div class="benefit-row">
+                            <div><strong>Prouni / FIES / Iniciação Científica / Permanência</strong>
+                                <p class="muted">Consulte a secretaria para verificar elegibilidade e situação.</p>
+                            </div><span class="pill neutral-bg">Consulta</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="user-panel" id="panel-servicos">
+                    <div class="card">
+                        <div class="section-title">
+                            <div>
+                                <h3>Biblioteca</h3>
+                                <p class="muted">Empréstimos e devoluções</p>
+                            </div><button class="btn-light demo-action">Consultar multas</button>
+                        </div>
+                        <div class="table-wrap">
+                            <table class="data-table">
+                                <thead>
+                                    <tr>
+                                        <th>Livro</th>
+                                        <th>Devolução</th>
+                                        <th>Situação</th>
+                                        <th>Ação</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Introdução à Matemática</td>
+                                        <td>28/11/2026</td>
+                                        <td><span class="pill warn-bg">Próximo do prazo</span></td>
+                                        <td><button class="text-button demo-action">Renovar</button></td>
+                                    </tr>
+                                    <tr>
+                                        <td>História do Brasil</td>
+                                        <td>05/12/2026</td>
+                                        <td><span class="pill good-bg">No prazo</span></td>
+                                        <td><button class="text-button demo-action">Renovar</button></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <h3>Protocolos e requerimentos</h3>
+                        <div class="benefit-row">
+                            <div><strong>#2026-00418 · Atualização cadastral</strong>
+                                <p class="muted">Enviado em 12/11/2026</p>
+                            </div><span class="pill warn-bg">Em análise</span>
+                        </div>
+                        <div class="benefit-row">
+                            <div><strong>#2026-00372 · Declaração escolar</strong>
+                                <p class="muted">Concluído em 04/11/2026</p>
+                            </div><span class="pill good-bg">Concluído</span>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="section-title">
+                            <h3>Atividades complementares</h3><strong>24h / 40h</strong>
+                        </div>
+                        <div class="progress"><span style="width:60%"></span></div>
+                        <p class="muted">Horas aprovadas: 24h · Exigidas: 40h · Restam: 16h</p>
+                    </div>
+                </div>
+                <div class="user-panel" id="panel-seguranca">
+                    <div class="card">
+                        <h3>Alteração de senha</h3>
+                        <form id="password-form" class="data-grid">
+                            <div class="field"><label for="current-password">Senha atual</label><input
+                                    id="current-password" type="password" placeholder="Digite a senha atual" required>
+                            </div>
+                            <div class="field"><label for="new-password">Nova senha</label><input id="new-password"
+                                    type="password" minlength="8" placeholder="Mínimo de 8 caracteres" required></div>
+                            <div class="field"><label for="confirm-password">Confirmar nova senha</label><input
+                                    id="confirm-password" type="password" minlength="8"
+                                    placeholder="Repita a nova senha" required></div>
+                            <div class="form-actions"><button class="btn-primary" type="submit">Atualizar senha</button>
+                            </div>
+                        </form>
+                        <p class="muted small-note">Demonstração visual: a alteração não é enviada a um servidor.</p>
+                    </div>
+                    <div class="card">
+                        <h3>Autenticação em dois fatores</h3>
+                        <div class="setting-row">
+                            <div><strong>Ativar 2FA</strong>
+                                <p class="muted">Adicione uma etapa extra de verificação à sua conta.</p>
+                            </div><label class="switch"><input type="checkbox" id="two-factor"><span></span></label>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <h3>Preferências de notificações</h3>
+                        <div class="setting-row"><strong>E-mail</strong><label class="switch"><input type="checkbox"
+                                    checked><span></span></label></div>
+                        <div class="setting-row"><strong>SMS</strong><label class="switch"><input
+                                    type="checkbox"><span></span></label></div>
+                        <div class="setting-row"><strong>Push</strong><label class="switch"><input type="checkbox"
+                                    checked><span></span></label></div>
+                    </div>
+                    <div class="card">
+                        <h3>Acessibilidade</h3>
+                        <div class="setting-row"><strong>Modo escuro</strong><label class="switch"><input
+                                    type="checkbox" id="dark-mode"><span></span></label></div>
+                        <div class="setting-row"><strong>Alto contraste</strong><label class="switch"><input
+                                    type="checkbox" id="high-contrast"><span></span></label></div>
+                        <div class="setting-row"><label for="font-size">Tamanho da fonte</label><select id="font-size"
+                                class="compact-select">
+                                <option value="normal">Normal</option>
+                                <option value="large">Grande</option>
+                                <option value="larger">Muito grande</option>
+                            </select></div>
+                    </div>
+                    <div class="card logout-card">
+                        <div>
+                            <h3>Sessão</h3>
+                            <p class="muted">Encerre o acesso ao portal neste dispositivo.</p>
+                        </div><a href="../projeto.html" class="btn-danger">Sair da conta</a>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+    <div id="toast" class="toast" role="status" aria-live="polite"></div>
+    <script src="usuario.js"></script>
+</body>
+
+</html>
